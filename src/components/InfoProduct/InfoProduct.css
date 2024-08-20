@@ -1,0 +1,63 @@
+.image-small-detail {
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  .image-small-detail:hover:active {
+    border: 2px solid rgb(150, 138, 80);
+  }
+  
+  .image-big {
+    border: 1px solid rgb(180, 171, 124);
+    border-radius: 10px;
+    transition: border 0s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-small {
+      align-items: center;
+    }
+  
+    .image-big {
+      margin-top: 15px;
+    }
+  }
+  
+
+.container-info-product {
+  width: 80%;
+  margin: 5rem auto;
+}
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid rgb(150, 138, 80);
+}
+.accordion-button:hover {
+  background-color: none;
+  color: black;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #000;
+  border: none;
+}
+.info-detail-product .price-info a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.info-detail-product .price-info .tokopedia {
+  background-color: rgb(0, 170, 91);
+}
+.info-detail-product .price-info .shopee {
+  background-color: rgb(238, 77, 45);
+}
+.info-detail-product .price-info .tokopedia:hover {
+  background-color: rgb(2, 131, 71);
+}
+.info-detail-product .price-info .shopee:hover {
+  background-color: rgb(194, 56, 28);
+}
