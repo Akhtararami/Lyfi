@@ -1,4 +1,6 @@
 import React from "react";
+import tokped from "./../../assets/Bundling/tokped.png";
+import shopee from "./../../assets/Bundling/shopee.png";
 
 const DetailProduct = () => {
   return (
@@ -100,13 +102,21 @@ const DetailProduct = () => {
           <p className="fw-semibold text-secondary">Tersedia di</p>
           <div className="checkout-product">
             <a href="" className="tokopedia">
-              Tokopedia
+              <img src={tokped} alt="" /> Tokopedia
             </a>
             <a href="" className="ms-2 shopee">
-              Shopee
+              <img src={shopee} alt="" /> Shopee
             </a>
           </div>
         </div>
+        <hr className="mt-5" />
+        <p class="bagikan-produk">
+          Bagikan Produk ini
+          <span>
+            <i class="fa-brands fa-instagram me-3"></i>
+            <i class="fa-brands fa-whatsapp "></i>
+          </span>
+        </p>
       </div>
     </>
   );

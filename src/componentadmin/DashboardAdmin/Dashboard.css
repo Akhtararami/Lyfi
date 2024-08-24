@@ -1,0 +1,68 @@
+.card-custom {
+  border-radius: 50px 0 50px 0px; /* Membuat sudut melengkung */
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  height: 200px;
+}
+
+.image-card-dashboard {
+  width: 100px; /* Mengatur ukuran gambar */
+  height: auto;
+}
+
+.card-title {
+  font-size: 48px; /* Ukuran font untuk angka */
+  color: #2c2c2c; /* Warna teks */
+}
+
+.card-text {
+  font-size: 18px;
+  color: #2c2c2c; /* Warna teks untuk deskripsi */
+}
+
+.card-footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 0;
+  border-radius: 0px 0px 50px 0px !important; /* Membuat sudut bawah melengkung */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 70%;
+  transition: background 0.3s ease;
+}
+
+.card-link-text {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-link-text:hover {
+  text-decoration: underline;
+  background-color: white;
+}
+.card-footer:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+/* HEADER */
+.img-admin {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.section-header {
+  position: relative;
+}
+
+.header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

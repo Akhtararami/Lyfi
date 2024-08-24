@@ -71,8 +71,8 @@
 /* ProductList.css */
 .button-container {
   overflow-x: auto; /* Membolehkan scroll horizontal */
-  padding: 10px 0; 
-  margin: 0 auto;/* Ruang di atas dan bawah */
+  padding: 10px 0;
+  margin: 0 auto; /* Ruang di atas dan bawah */
 }
 
 .button-category {
@@ -150,7 +150,7 @@
   border-top: 1px solid rgb(180, 171, 124);
 }
 @media (max-width: 430px) {
-  .button-container{
+  .button-container {
     display: flex;
   }
 }

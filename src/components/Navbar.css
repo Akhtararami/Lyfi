@@ -17,7 +17,17 @@ nav {
   width: 100%;
   position: relative; /* Needed for positioning the underline */
 }
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important; /* Menghapus shadow jika ada */
+}
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  border: none !important;
+  box-shadow: none !important; /* Menghapus shadow jika ada */
+}
 /* Individual nav items */
 .nav-item {
   margin: 0 15px;
@@ -89,5 +99,4 @@ button:hover {
   background: none;
   border: none;
   box-shadow: none;
-  color: rgb(211, 224, 28);
 }

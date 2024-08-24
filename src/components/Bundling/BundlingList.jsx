@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./../../assets/LandingPage/produk.png";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -31,6 +32,7 @@ const products = [
     category: "Lip Balm",
     image: logo,
   },
+
   // Tambahkan produk lainnya sesuai kebutuhan
 ];
 
@@ -50,9 +52,9 @@ const ProductList = () => {
             <p className="nama-product">{getShortName(product.name)}</p>
             <p>{product.price}</p>
           </div>
-          <a className="custom-detail-produk" href="">
+          <Link to="/InfoBundling" className="custom-detail-produk" href="">
             <div className="custom-card-footer">Lihat Produk</div>
-          </a>
+          </Link>
         </div>
       ))}
     </div>

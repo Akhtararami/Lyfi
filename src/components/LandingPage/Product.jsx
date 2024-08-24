@@ -1,5 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import logo from "./../../assets/LandingPage/produk.png";
+import logo2 from "./../../assets/LandingPage/about.png";
+import logo3 from "./../../assets/LandingPage/girl.png";
 import "./LandingPage.css";
 import { Link } from "react-router-dom";
 
@@ -12,14 +14,28 @@ const products = [
     image: logo,
   },
   {
-    id: 1,
+    id: 2,
     category: "Skincare",
     price: "Rp.100.000,00",
     name: "Scarlet Whitening Facial Wash",
-    image: logo,
+    image: logo2,
   },
   {
-    id: 1,
+    id: 3,
+    category: "Skincare",
+    price: "Rp.100.000,00",
+    name: "Scarlet Whitening",
+    image: logo3,
+  },
+  {
+    id: 4,
+    category: "Skincare",
+    price: "Rp.100.000,00",
+    name: "Scarlet Whitening",
+    image: logo2,
+  },
+  {
+    id: 5,
     category: "Skincare",
     price: "Rp.100.000,00",
     name: "Scarlet Whitening",
@@ -29,34 +45,6 @@ const products = [
 
 const Product = () => {
   const containerRef = useRef(null);
-  const [intervalId, setIntervalId] = useState(null);
-
-  useEffect(() => {
-    const container = containerRef.current;
-
-    const startScrolling = () => {
-      const id = setInterval(() => {
-        if (
-          container.scrollLeft + container.clientWidth >=
-          container.scrollWidth
-        ) {
-          container.scrollTo({ left: 0, behavior: "smooth" });
-        } else {
-          container.scrollBy({
-            left: container.clientWidth / 4,
-            behavior: "smooth",
-          });
-        }
-      }, 2000);
-      setIntervalId(id);
-    };
-
-    startScrolling();
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [intervalId]);
 
   const scrollLeft = () => {
     if (containerRef.current) {
@@ -90,7 +78,7 @@ const Product = () => {
         Our Product
       </h1>
       <div className="d-flex justify-content-center align-items-center">
-        <button className="me-5" onClick={scrollLeft}>
+        <button className="me-3" onClick={scrollLeft}>
           <i
             className="fa-solid fa-chevron-left"
             style={{
@@ -99,11 +87,12 @@ const Product = () => {
           ></i>
         </button>
         <div
-          className="container-product d-flex d-flex justify-content-center"
+          className="container-product d-flex justify-content-start"
           style={{
-            overflowX: "hidden",
+            overflowX: "auto",
             scrollBehavior: "smooth",
-            width: "72rem", // Adjust this to your container width for 4 blocks
+            width: "70%", // Adjust this to your container width for 4 blocks
+            padding: "0 2rem", // Increase padding to ensure no card is cut off
             position: "relative",
           }}
           ref={containerRef}
@@ -111,8 +100,8 @@ const Product = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="product-card m-2 border flex-shrink-0 "
-              style={{ width: "18rem" }} // Each block width
+              className="product-card mx-2 border flex-shrink-0"
+              style={{ width: "18rem", margin: "0 1rem" }} // Adjust margin to ensure space around each card
             >
               <img
                 src={product.image}
@@ -123,8 +112,8 @@ const Product = () => {
                 <h5 className="text-muted fw-semibold">
                   {truncateText(product.category, 2)}
                 </h5>
-                <p className="card-title">{truncateText(product.name, 2)}</p>
-                <p className="card-text mt-5">
+                <p className="card-title fs-5">{truncateText(product.name, 2)}</p>
+                <p className="card-text mt-4">
                   {truncateText(product.price, 2)}
                 </p>
               </div>
@@ -134,7 +123,7 @@ const Product = () => {
             </div>
           ))}
         </div>
-        <button className="ms-5" onClick={scrollRight}>
+        <button className="ms-3" onClick={scrollRight}>
           <i
             className="fa-solid fa-chevron-right"
             style={{

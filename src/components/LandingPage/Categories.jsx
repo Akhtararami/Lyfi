@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import foto from "./../../assets/LandingPage/Productcategory.png";
+import logo2 from "./../../assets/LandingPage/about.png";
+import logo3 from "./../../assets/LandingPage/girl.png";
 import "./LandingPage.css";
 
 const Categories = () => {
@@ -81,7 +83,7 @@ const Categories = () => {
                 <div className="container text-center">
                   <div className="row">
                     <div className="col-12 col-md-6 mb-4 mb-md-0">
-                      <img src={foto} alt="Face Wash" className="img-fluid" />
+                      <img src={foto} alt="Face Wash" className="img-fluid w-25" />
                     </div>
                     <div className="col-12 col-md-6">
                       <p className="fs-4 text-start">Face Wash</p>
@@ -108,7 +110,7 @@ const Categories = () => {
                 <div className="container text-center">
                   <div className="row">
                     <div className="col-12 col-md-6 mb-4 mb-md-0">
-                      <img src={foto} alt="Toner" className="img-fluid" />
+                      <img src={logo2} alt="Toner" className="img-fluid" />
                     </div>
                     <div className="col-12 col-md-6">
                       <p className="fs-4 text-start">Toner</p>
@@ -162,7 +164,7 @@ const Categories = () => {
                 <div className="container text-center">
                   <div className="row">
                     <div className="col-12 col-md-6 mb-4 mb-md-0">
-                      <img src={foto} alt="Sunscreen" className="img-fluid" />
+                      <img src={logo3} alt="Sunscreen" className="img-fluid" />
                     </div>
                     <div className="col-12 col-md-6">
                       <p className="fs-4 text-start">Sunscreen</p>

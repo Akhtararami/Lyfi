@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./../../assets/LandingPage/produk.png";
+import logo2 from "./../../assets/LandingPage/about.png";
+import logo3 from "./../../assets/LandingPage/girl.png";
 import { Link } from "react-router-dom";
 
 const products = [
@@ -16,7 +18,7 @@ const products = [
     name: "Scarlett Whitening Toner",
     price: "Rp 110.000,-",
     category: "Toner",
-    image: logo,
+    image: logo3,
   },
   {
     id: 3,
@@ -26,11 +28,11 @@ const products = [
     image: logo,
   },
   {
-    id: 3,
+    id: 5,
     name: "Scarlett Whitening Serum",
     price: "Rp 120.000,-",
     category: "Serum",
-    image: logo,
+    image: logo2,
   },
   {
     id: 4,
@@ -38,7 +40,7 @@ const products = [
     price: "Rp 120.000,-",
     category: "Lip Balm",
     image: logo,
-  }
+  },
   // Tambahkan produk lainnya sesuai kebutuhan
 ];
 
@@ -87,7 +89,7 @@ const ProductList = () => {
               <p className="nama-product">{getShortName(product.name)}</p>
               <p>{product.price}</p>
             </div>
-            <Link to={'/InfoProduct'} className="custom-detail-produk">
+            <Link to={"/InfoProduct"} className="custom-detail-produk">
               <div className="custom-card-footer">Lihat Produk</div>
             </Link>
           </div>

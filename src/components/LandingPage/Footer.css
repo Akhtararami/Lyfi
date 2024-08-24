@@ -56,3 +56,13 @@ footer .detail ul li a {
     margin-left: -2rem;
   }
 }
+
+@media (max-width: 375px) {
+  footer .detail ul li{
+    margin-top: 5px;
+  }
+  footer .detail{
+    margin-left: 5rem;
+    width: 100%;
+  }
+}

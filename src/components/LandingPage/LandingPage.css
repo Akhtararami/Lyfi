@@ -198,6 +198,12 @@
   text-align: center;
   transition: background-color 0.3s ease;
 }
+.container-product::-webkit-scrollbar {
+  display: none; /* Hapus scrollbar */
+}
+.container-product .card-text {
+  color: rgb(180, 171, 124);
+}
 @media only screen and (max-width: 768px) {
   .product-card {
   }
@@ -208,13 +214,13 @@
   .product-card {
     width: 10px;
     max-width: 200px;
-    max-height: 300px;
+    max-height: 400px;
   }
   .product-card .card-img-top {
-    max-width: 100px;
-    max-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 100%;
+    max-height: 130px;
+    max-height: 170px;
+    min-height: 130px;
     margin-bottom: 0;
   }
   .product-card .card-body h5 {
@@ -300,8 +306,16 @@
   .container-about img {
     width: 10rem;
   }
+  .container-about .text {
+    margin-left: 0rem;
+  }
 }
 @media only screen and (max-width: 1366px) {
+  .container-about .text {
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
   .container-about .text {
     margin-left: 0rem;
   }
@@ -315,7 +329,8 @@
 
 .container-mail .image-container {
   position: relative;
-  display: inline-block; /* Mengatur kontainer sesuai ukuran gambar */
+  display: inline-block;
+  background-size: cover; /* Mengatur kontainer sesuai ukuran gambar */
 }
 .container-mail .image-container img {
   border-radius: 20px;
@@ -339,6 +354,7 @@
   border: none;
   padding: 0.4rem;
   padding-left: 2rem;
+  width: 100%;
 }
 .container-mail .input-form:focus {
   outline: none;
@@ -357,6 +373,14 @@
 @media only screen and (max-width: 430px) {
   .container-mail .image-container p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container-mail .image-container p {
+    font-size: 0rem;
+  }
+  .container-mail .input-form {
+    width: 80%;
   }
 }
 /* <--------------------------Mmail End---------------------------> */
@@ -502,6 +526,18 @@
   .container-categories .main ul li {
     justify-content: start;
     margin-left: -1rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container-categories .main ul li {
+    justify-content: start;
+    margin-left: -1.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container-categories .main ul li {
+    justify-content: start;
+    margin-left: -1.8rem;
   }
 }
 /* <---------------------------Categories End ---------------------------> */
