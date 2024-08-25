@@ -24,8 +24,8 @@ const Dashboard = () => {
                 </div>
                 <div className="col-md-8 mt-3">
                   <div className="card-body">
-                    <h1 className="card-title mb-0 fw-bold">123</h1>
-                    <p className="card-text fw-semibold">Total Produk</p>
+                    <h1 className="card-title">123</h1>
+                    <p className="card-text ">Total Produk</p>
                   </div>
                 </div>
               </div>
@@ -50,8 +50,8 @@ const Dashboard = () => {
                 </div>
                 <div className="col-md-8 mt-3">
                   <div className="card-body">
-                    <h1 className="card-title mb-0 fw-bold">123</h1>
-                    <p className="card-text fw-semibold">Total Bundling</p>
+                    <h1 className="card-title">123</h1>
+                    <p className="card-text">Total Bundling</p>
                   </div>
                 </div>
               </div>
@@ -76,8 +76,8 @@ const Dashboard = () => {
                 </div>
                 <div className="col-md-8 mt-3">
                   <div className="card-body">
-                    <h1 className="card-title mb-0 fw-bold">123</h1>
-                    <p className="card-text fw-semibold">Total Visitor</p>
+                    <h1 className="card-title">123</h1>
+                    <p className="card-text">Total Visitor</p>
                   </div>
                 </div>
               </div>

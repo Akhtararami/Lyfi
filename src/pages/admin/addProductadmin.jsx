@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./../../componentadmin/Admin.css";
 import Sidebar from "./../../componentadmin/sidebar";
 import AddProduct from "./../../componentadmin/ProductAdmin/AddProduct";
 import "./../../componentadmin/ProductAdmin/AddProduct.css";
 
-const addProductAdmin = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+const AddProductAdmin = () => {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 786) {
+        setSidebarOpen(false);
+      } else {
+        setSidebarOpen(true);
+      }
+    };
+
+    handleResize(); // Set the initial state based on the current screen size
+    window.addEventListener("resize", handleResize); // Listen for window resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -32,4 +49,4 @@ const addProductAdmin = () => {
   );
 };
 
-export default addProductAdmin;
+export default AddProductAdmin;

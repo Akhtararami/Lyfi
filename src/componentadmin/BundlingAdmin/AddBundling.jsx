@@ -11,19 +11,19 @@ const AddBundling = () => {
         </div>
         <div className="form-addproduct">
           <div className="addproduct-input row">
-            <label htmlFor="addproduct">Nama Product :</label>
+            <label htmlFor="addproduct">Nama Bundling :</label>
             <input type="text" placeholder="Your Answer" />
           </div>
         </div>
         <div className="form-addproduct">
           <div className="addproduct-input row">
-            <label htmlFor="addproduct">Harga Prouduk :</label>
+            <label htmlFor="addproduct">Harga Bundling :</label>
             <input type="text" placeholder="Your Answer" />
           </div>
         </div>
         <div className="form-addproduct">
           <div className="addproduct-input row">
-            <label htmlFor="addproduct">Detail Produk :</label>
+            <label htmlFor="addproduct">Detail Bundling :</label>
             <input type="text" placeholder="Your Answer" />
           </div>
         </div>
@@ -35,8 +35,8 @@ const AddBundling = () => {
         </div>
         <div className="form-addproduct">
           <div className="addproduct-input row">
-            <label htmlFor="addproduct">Link Produk :</label>
-            <div className="link-product d-flex">
+            <label htmlFor="addproduct">Link Bundling :</label>
+            <div className="link-product">
               <input type="text" placeholder="Tokopedia" />
               <input type="text" placeholder="Shopee" />
             </div>
@@ -44,7 +44,7 @@ const AddBundling = () => {
         </div>
         <div className="form-addproduct">
           <div className="addproduct-input row">
-            <label htmlFor="addproduct">Foto Produk :</label>
+            <label htmlFor="addproduct">Foto Bundling :</label>
             <label for="file" class="custum-file-upload mt-4 ms-4">
               <div class="icon">
                 <svg
@@ -77,10 +77,16 @@ const AddBundling = () => {
           </div>
         </div>
         <a href="">
-          <button className="addproduct-save">Save Changes</button>
+          <button className="addproduct-save d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-floppy-disk me-2"></i>{" "}
+            <span className="d-none d-md-block">Save Changes</span>
+          </button>
         </a>
-        <Link to="/admin/bundlingadmin" href="">
-          <button className="addproduct-back">Kembali</button>
+        <Link to="/admin/productadmin" href="">
+          <button className="addproduct-back d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-circle-left me-2"></i>{" "}
+            <span className="d-none d-md-block">Kembali</span>
+          </button>
         </Link>
       </div>
     </>

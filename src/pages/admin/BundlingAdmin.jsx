@@ -4,6 +4,7 @@ import Sidebar from "./../../componentadmin/sidebar";
 import Header from "../../componentadmin/ProductAdmin/Header";
 import { Link } from "react-router-dom";
 import foto from "./../../assets/LandingPage/about.png";
+import "./../../componentadmin/BundlingAdmin/Bundlingadmin.css";
 
 import BundlingTable from "../../componentadmin/BundlingAdmin/BundlingTable";
 
@@ -20,7 +21,7 @@ const bundling = [
   // Tambahkan lebih banyak produk
 ];
 const BundlingAdmin = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);

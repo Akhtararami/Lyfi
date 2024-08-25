@@ -5,7 +5,7 @@ import AddBundling from "../../componentadmin/BundlingAdmin/AddBundling.jsx";
 import "./../../componentadmin/ProductAdmin/AddProduct.css";
 
 const addBundlingAdmin = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);

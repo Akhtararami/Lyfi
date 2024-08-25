@@ -5,7 +5,7 @@ import AddCategories from "./../../componentadmin/ProductAdmin/AddCategories";
 import "./../../componentadmin/ProductAdmin/AddProduct.css";
 
 const addProductAdmin = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);

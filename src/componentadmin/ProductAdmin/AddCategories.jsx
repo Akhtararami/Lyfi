@@ -14,11 +14,17 @@ const AddCategories = () => {
             <input type="text" placeholder="Your Answer" />
           </div>
         </div>
-        <a href="" className="kembali">
-          <button className="addproduct-save">Save Changes</button>
+        <a href="">
+          <button className="addproduct-save d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-floppy-disk me-2"></i>{" "}
+            <span className="d-none d-md-block">Save Changes</span>
+          </button>
         </a>
-        <Link to="/admin/productadmin" href="" >
-          <button className="addproduct-back">Kembali</button>
+        <Link to="/admin/productadmin" href="">
+          <button className="addproduct-back d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-circle-left me-2"></i>{" "}
+            <span className="d-none d-md-block">Kembali</span>
+          </button>
         </Link>
       </div>
     </>

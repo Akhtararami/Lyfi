@@ -1,5 +1,5 @@
 import React from "react";
-import girl from "./../../assets/LandingPage/about.png"
+import girl from "./../../assets/LandingPage/about.png";
 
 const Header = () => {
   return (
@@ -10,8 +10,9 @@ const Header = () => {
           <p className="ms-5">Hi admin, Welcome to Dashboard</p>
         </div>
         <div className="header-right d-flex ">
-            <p className="mt-3">Admin</p>
-            <img className="ms-2 img-admin" src={girl} alt="" />
+          <p className="mt-3 d-none d-md-block">Admin</p>
+
+          <img className="ms-2 img-admin" src={girl} alt="" />
         </div>
       </div>
     </>

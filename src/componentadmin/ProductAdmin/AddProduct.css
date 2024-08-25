@@ -1,5 +1,5 @@
 .container-productadmin {
-  margin-top: 7rem;
+  margin-top: 5rem;
   text-align: left;
 }
 .container-productadmin a {
@@ -16,7 +16,7 @@
   border-spacing: 0;
   border-radius: 20px;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 1px solid white;
 }
 
@@ -257,4 +257,104 @@
 }
 .addproduct-back:hover {
   background-color: rgb(124, 116, 74);
+}
+@media screen and (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 8px;
+    padding: 4px;
+  }
+
+  .custom-table td img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .custom-table tbody td button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .container-productadmin a {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .pagination-number {
+    min-width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 7px;
+    padding: 3px;
+  }
+
+  .custom-table td img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-table tbody td button {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+  .container-productadmin a {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+  .pagination-number {
+    min-width: 25px;
+    height: 25px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 6px;
+    padding: 2%;
+  }
+  .header-addproduct{
+    width: 85%;
+  }
+  .container-productadmin a {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+  .custom-table td img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .custom-table tbody td button {
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+  }
+  .form-addproduct {
+    width: 85%;
+  }
+  .pagination-number {
+    min-width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+  }
+  .custum-file-upload {
+    margin-left: -100rem;
+  }
+  .addproduct-save{
+    margin-right: 2rem;
+  }
 }

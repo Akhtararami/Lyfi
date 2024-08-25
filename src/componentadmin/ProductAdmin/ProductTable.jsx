@@ -27,49 +27,47 @@ const ProductTable = ({ products }) => {
   };
 
   return (
-    <div>
+    <div className="table-container">
       {/* Tabel Produk */}
-      <Table
-        responsive
-        className="custom-table table-responsive"
-        style={{ borderRadius: "20px" }}
-      >
-        <thead>
-          <tr>
-            <th className="text-center">Nama Produk</th>
-            <th className="text-center">Harga Produk</th>
-            <th className="text-center">Detail Produk</th>
-            <th className="text-center">Foto Produk</th>
-            <th className="text-center">Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentItems.map((product, index) => (
-            <tr key={index}>
-              <td className="text-center text-light">{product.name}</td>
-              <td className="text-center text-light">{product.price}</td>
-              <td className="text-center text-light" style={{ width: "40%" }}>
-                {product.details.split(" ").slice(0, 5).join(" ") + "..."}
-              </td>
-              <td className="text-center">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  style={{ width: "80px", height: "80px" }}
-                />
-              </td>
-              <td className="text-center" style={{ width: "20%" }}>
-                <Button size="sm">
-                  <i className="fa-regular fa-pen-to-square"></i>
-                </Button>{" "}
-                <Button size="sm">
-                  <i className="fa-solid fa-trash"></i>
-                </Button>
-              </td>
+      <div className="table-responsive">
+        <Table className="custom-table" style={{ borderRadius: "20px" }}>
+          <thead>
+            <tr>
+              <th className="text-center">Nama Produk</th>
+              <th className="text-center">Harga Produk</th>
+              <th className="text-center">Detail Produk</th>
+              <th className="text-center">Foto Produk</th>
+              <th className="text-center">Aksi</th>
             </tr>
-          ))}
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {currentItems.map((product, index) => (
+              <tr key={index}>
+                <td className="text-center text-light">{product.name}</td>
+                <td className="text-center text-light">{product.price}</td>
+                <td className="text-center text-light" style={{ width: "40%" }}>
+                  {product.details.split(" ").slice(0, 5).join(" ") + "..."}
+                </td>
+                <td className="text-center">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    style={{ width: "80px", height: "80px" }}
+                  />
+                </td>
+                <td className="text-center" style={{ width: "20%" }}>
+                  <Button size="sm">
+                    <i className="fa-regular fa-pen-to-square"></i>
+                  </Button>{" "}
+                  <Button size="sm">
+                    <i className="fa-solid fa-trash"></i>
+                  </Button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </div>
 
       {/* Pagination */}
       <div className="pagination-container">

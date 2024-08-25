@@ -28,8 +28,8 @@ const PilihProdukModal = () => {
 
   return (
     <>
-      <a href="#" onClick={handleShow}>
-        Pilih Produk
+      <a href="#" className="modal-produk" onClick={handleShow}>
+        <i class="fa-solid fa-arrow-up me-3"></i>Pilih Produk
       </a>
 
       <Modal show={show} onHide={handleClose} centered size="xl">
@@ -40,7 +40,14 @@ const PilihProdukModal = () => {
           <ProductTable products={products} />
         </Modal.Body>
         <Modal.Footer>
-          <Button style={{ backgroundColor: "#968a50", border :"none", width: "100%"}} onClick={handleClose}>
+          <Button
+            style={{
+              backgroundColor: "#968a50",
+              border: "none",
+              width: "100%",
+            }}
+            onClick={handleClose}
+          >
             Close
           </Button>
         </Modal.Footer>
